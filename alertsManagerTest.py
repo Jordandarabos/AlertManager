@@ -1,13 +1,13 @@
 import alertsManager,time
 
-emailUsername = ##
-emailPass = ##
-recipients = [##]
-bccRecipients = []
+emailUsername = 'username'
+emailPass = 'password'
+recipients = ['recipient1@example.com','recipient2@example.com']
+bccRecipients = ['bccrecipient1@example.com','bccrecipient2@example.com']
 
 AlertsManager = alertsManager.AlertsManager(recipients,bccRecipients,emailUsername,emailPass)
 
-#AlertsManager.email.sender = "Jordan"
+AlertsManager.email.sender = "Example Sender"
 
 for j in range (0,100):
 	AlertsManager.addAlert("Digital Test {}".format(j), 0,delay=5)
