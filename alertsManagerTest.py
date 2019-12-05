@@ -1,8 +1,8 @@
 import alertsManager,time
 
-emailUsername = "darabostest@gmail.com"
-emailPass = "Daglio1020"
-recipients = ["Jordandarabos@gmail.com"]
+emailUsername = ##
+emailPass = ##
+recipients = [##]
 bccRecipients = []
 
 AlertsManager = alertsManager.AlertsManager(recipients,bccRecipients,emailUsername,emailPass)
