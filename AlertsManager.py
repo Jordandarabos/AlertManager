@@ -1,6 +1,6 @@
 ###Alerts Manager###
 
-##Goal: Input current status of alerts and it will manage time alert occured,
+##		Input current status of alerts and it will manage time alert occured,
 ## 		info on last alarm, whether or not a change has occured, email client
 ##      to report changes to, also add functionality to store to local db
 
