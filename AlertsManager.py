@@ -69,7 +69,7 @@ class AlertsManager():
 			print("Alert Name Does Not Exist: ",e)
 
 
-	def checkForChanges(self,sendEmail="No"):
+	def checkForChanges(self,sendEmail=False):
 
 		self.newAlerts = {}
 		self.email.body = ""
@@ -89,7 +89,7 @@ class AlertsManager():
 						    <td align="center">{}</td>
 						  </tr>
 			""".format(self.alerts[j]["time"], j, self.alerts[j]["value"],self.alerts[j]["lastValue"],self.alerts[j]["status"])
-			if sendEmail == "Yes":
+			if sendEmail == True:
 				self.email.sendEmail()
 
 		self.email.body += "<br /></table>"
